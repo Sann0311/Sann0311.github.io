@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --neon-green: #10b981;
+  /* Emerald 500 - Professional Green */
+  --cyber-purple: #8b5cf6;
+  /* Violet 500 - Professional Purple */
+  --cyber-blue: #0ea5e9;
+  /* Sky 500 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-neon-green: var(--neon-green);
+  --color-cyber-purple: var(--cyber-purple);
+  --color-cyber-blue: var(--cyber-blue);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --drop-shadow-neon: 0 0 8px rgba(16, 185, 129, 0.3);
+  --drop-shadow-purple: 0 0 8px rgba(139, 92, 246, 0.3);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.mono-font {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+.purple-glow {
+  text-shadow: 0 0 10px var(--cyber-purple);
+}
+
+.neon-border {
+  border: 1px solid var(--neon-green);
+  box-shadow: 0 0 10px var(--neon-green);
+}
+
+.purple-border {
+  border: 1px solid var(--cyber-purple);
+  box-shadow: 0 0 10px var(--cyber-purple);
+}
+
+.cyber-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cyber-card:hover {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
