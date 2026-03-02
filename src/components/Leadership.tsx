@@ -1,10 +1,23 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
-import { Users, Calendar, Award } from "lucide-react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Users, Calendar, Award, ChevronDown, ChevronUp } from "lucide-react";
+
+const events = [
+    {
+        title: "Event 1, Fall 2025: Industry Connect",
+        description: "Hosted an Industry Connect event, inviting cybersecurity professionals on campus for resume reviews and career growth discussions, giving students direct access to industry insight and hiring perspectives."
+    },
+    {
+        title: "Event 2, Winter 2026: Certifications Info Night",
+        description: "Hosted a Certifications Info Night introducing students to the importance of cybersecurity certifications and guiding them on which certificates to pursue based on their career goals."
+    }
+];
 
 const Leadership = () => {
+    const [isExpanded, setIsExpanded] = useState(false);
+
     return (
         <section id="leadership" className="py-24 bg-[#050505] relative">
             <div className="container mx-auto px-4">
@@ -45,7 +58,7 @@ const Leadership = () => {
                             Leading an 8-member team to host hackathons and events for 80+ students, fostering cybersecurity education and community across the university.
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                             <div className="flex items-center space-x-3">
                                 <div className="p-2 bg-neon-green/10 rounded-lg text-neon-green">
                                     <Users size={20} />
@@ -65,6 +78,35 @@ const Leadership = () => {
                                 <span className="text-sm font-medium">80+ Students Impacted</span>
                             </div>
                         </div>
+
+                        <button
+                            onClick={() => setIsExpanded(!isExpanded)}
+                            className="flex items-center space-x-2 text-neon-green hover:text-white transition-colors mono-font text-sm font-bold"
+                        >
+                            <span>{isExpanded ? "Show Less" : "Read More"}</span>
+                            {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        </button>
+
+                        <AnimatePresence>
+                            {isExpanded && (
+                                <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="overflow-hidden"
+                                >
+                                    <div className="pt-8 space-y-6 border-t border-white/10 mt-6">
+                                        {events.map((event, idx) => (
+                                            <div key={idx} className="bg-white/5 p-6 rounded-xl border border-white/5">
+                                                <h4 className="text-neon-green font-bold mb-2 mono-font">{event.title}</h4>
+                                                <p className="text-sm text-foreground/70 leading-relaxed">{event.description}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </motion.div>
                 </div>
             </div>

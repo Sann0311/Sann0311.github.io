@@ -9,31 +9,37 @@ const experiences = [
         company: "Avaly.ai",
         period: "Jun 2025 to Aug 2025",
         description: [
-            "Architected and prototyped an LLM-powered AI Audit Agent that operationalized 227 mapped controls across NIST AI RMF and ISO/IEC 42001, standardizing AI vendor self-assessments and reducing manual audit effort by ~20%.",
-            "Designed a comprehensive AI Security Vendor Self-Assessment framework spanning 7 trustworthiness domains, enabling structured evidence validation, control traceability, and maturity-based scoring across simulated GenAI deployment scenarios.",
-            "Conducted AI threat modeling and risk assessments for LLM-powered applications, mapping emerging threats (prompt injection, model inversion, data leakage, misuse) to NIST AI RMF mitigation strategies.",
-            "Contributed to AI-focused tabletop exercises and incident simulations to enhance organizational preparedness for model abuse and AI system failures.",
+            "Architected an LLM-powered AI Audit Agent operationalizing 227 controls across NIST AI RMF and ISO/IEC 42001, cutting manual audit effort by ~20%.",
+            "Designed an AI Security Vendor Self-Assessment framework across 7 trustworthiness domains with maturity-based scoring.",
+            "Conducted AI threat modeling for LLM apps, mapping threats (prompt injection, model inversion, data leakage) to NIST AI RMF mitigations.",
+            "Led AI-focused tabletop exercises simulating model abuse and AI system failure scenarios.",
         ],
+        skills: ["NIST AI RMF", "ISO/IEC 42001", "LLM Security", "Threat Modeling", "FastAPI"]
     },
     {
         title: "Cybersecurity Analyst",
         company: "KPMG India",
         period: "Jul 2023 to Jul 2024",
         description: [
-            "Led cybersecurity maturity and compliance assessments across 7 RBI/SEBI-regulated financial institutions (4 large banks, 2 mid-size banks, 1 early-stage institution), evaluating 70+ controls per engagement. Identified 80+ control gaps at a large bank, supporting remediation that elevated maturity from 2.5 to 3.8.",
-            "Drafted 5 enterprise security policies and SOPs (Asset Management, Change Management, BCP/DR, Security Awareness, Tabletop Exercises); owned Asset Management workstream end-to-end improving control effectiveness by ~30%. Presented findings to CISOs and senior leadership across 7 to 10 stakeholder sessions per engagement.",
-            "Assessed IAM configurations, SIEM platforms (QRadar), GRC workflows (RSA Archer), and cloud security controls across AWS, Azure, and GCP to evaluate detection coverage and enterprise control maturity.",
+            "Led compliance assessments across 7 RBI/SEBI-regulated institutions, evaluating 70+ controls per engagement.",
+            "Identified 80+ control gaps at a large bank, driving remediation that elevated maturity from 2.5 to 3.8.",
+            "Drafted 5 enterprise security policies and SOPs aligned with ISO 27001 and RBI requirements.",
+            "Owned Asset Management workstream end-to-end, improving control effectiveness by ~30%.",
+            "Presented risk posture findings to CISOs and senior leadership across 7 to 10 stakeholder sessions per engagement.",
+            "Assessed IAM, QRadar SIEM, RSA Archer GRC, and cloud controls across AWS, Azure, and GCP.",
         ],
+        skills: ["ISO 27001", "NIST CSF", "Vendor Risk", "GRC", "Cloud Security"]
     },
     {
         title: "Cybersecurity Intern",
         company: "KPMG India",
         period: "Jan 2023 to Jul 2023",
         description: [
-            "Supported regulatory cybersecurity audits by performing control walkthroughs, evidence validation, and compliance documentation reviews across financial sector clients.",
-            "Assisted in policy drafting and ISO 27001/NIST CSF alignment activities, contributing to improved audit preparedness and governance documentation quality.",
-            "Gained exposure to end-to-end engagement execution prior to transition into full workstream ownership as Analyst.",
+            "Supported regulatory audits through control walkthroughs, evidence validation, and compliance documentation.",
+            "Assisted in ISO 27001 and NIST CSF policy drafting, improving audit preparedness and governance quality.",
+            "Transitioned into full workstream ownership as Analyst following internship completion.",
         ],
+        skills: ["ISO 27001", "NIST CSF", "IT Audit", "Policy Development"]
     },
 ];
 
@@ -82,7 +88,7 @@ const Experience = () => {
                                         {exp.title}
                                     </h3>
                                     <p className="text-cyber-purple font-medium mb-4">{exp.company}</p>
-                                    <ul className="space-y-4">
+                                    <ul className="space-y-3 mb-6">
                                         {exp.description.map((desc, i) => (
                                             <li key={i} className="flex items-start text-sm text-foreground/70 leading-relaxed text-left">
                                                 <span className="text-neon-green mr-2 mt-1 shrink-0">▹</span>
@@ -90,6 +96,13 @@ const Experience = () => {
                                             </li>
                                         ))}
                                     </ul>
+                                    <div className="flex flex-wrap gap-2">
+                                        {exp.skills?.map((skill, i) => (
+                                            <span key={i} className="px-2 py-1 bg-neon-green/5 border border-neon-green/20 rounded text-[10px] mono-font text-neon-green">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </motion.div>
                         ))}
