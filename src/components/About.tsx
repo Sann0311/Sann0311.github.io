@@ -30,13 +30,16 @@ const About = () => {
                         className="space-y-6"
                     >
                         <p className="text-lg text-foreground/80 leading-relaxed italic border-l-4 border-neon-green pl-6 py-2 bg-neon-green/5">
-                            "My journey didn't start in AI—it started in the structured world of Governance, Risk, and Compliance (GRC). At KPMG, I spent over a year navigating the complexities of ISO 27001 and NIST CSF, helping banking institutions close control gaps and manage enterprise risk."
+                            "My journey into cybersecurity started in the structured world of Governance, Risk, and Compliance. At KPMG India, I spent 1.7 years working across 7 RBI/SEBI-regulated financial institutions, running maturity assessments, closing control gaps, and drafting enterprise security policies aligned with ISO 27001 and NIST CSF. That work gave me a deep appreciation for how compliance frameworks translate into real organizational resilience."
                         </p>
                         <p className="text-lg text-foreground/80 leading-relaxed">
-                            But the turning point came during my internship as an AI Security Engineer at Avaly.AI. While building automated audit agents, I saw firsthand how traditional security policies struggled to keep pace with Generative AI. I became fascinated by the challenge of securing these unpredictable systems.
+                            But something shifted when I started encountering AI systems in enterprise environments. Traditional security policies were not built for models that hallucinate, drift, or get manipulated through prompt injection. That gap became an obsession.
+                        </p>
+                        <p className="text-lg text-foreground/80 leading-relaxed text-left">
+                            It led me to Avaly.ai, where as an AI Security Engineer Intern I built LLM-powered audit agents, designed vendor self-assessment frameworks across 7 trustworthiness domains, and mapped 227 controls across NIST AI RMF and ISO/IEC 42001. I was not just studying AI risk, I was building the tooling to operationalize it.
                         </p>
                         <p className="text-lg text-foreground/80 leading-relaxed font-medium">
-                            That spark became my mission: <span className="text-neon-green">bridging the gap between rigorous GRC standards and fast-paced AI innovation.</span> I am now dedicating my Master's thesis to developing an 'AI Security Compliance and Risk Assessment Framework for Large Language Model Systems', ensuring that the future of AI is not just powerful, but secure.
+                            That experience convinced me this problem deserved deeper academic rigor. I am now dedicating my Master's thesis at UW Bothell to developing an <span className="text-neon-green">"AI Security Compliance and Risk Assessment Framework for Large Language Model Systems"</span>, formalizing what I saw in practice into a framework others can use. I am actively building at the intersection of GRC and AI security, and I am looking for a team doing the same.
                         </p>
                     </motion.div>
 

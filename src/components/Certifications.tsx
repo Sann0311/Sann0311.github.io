@@ -10,6 +10,7 @@ const certifications = [
         issuer: "CompTIA",
         icon: ShieldCheck,
         color: "#10b981",
+        status: "Verified",
         link: "/CompTIA_Security_Plus.pdf",
     },
     {
@@ -17,7 +18,7 @@ const certifications = [
         issuer: "Amazon Web Services",
         icon: Zap,
         color: "#fbbf24",
-        status: "In-Progress",
+        status: "In Progress",
         link: "#",
     },
     {
@@ -25,6 +26,7 @@ const certifications = [
         issuer: "Cyberwarfare Labs",
         icon: Award,
         color: "#ef4444",
+        status: "Verified",
         link: "/Saniya_Bhaladhare_MCRTA.pdf",
     },
     {
@@ -32,6 +34,7 @@ const certifications = [
         issuer: "EC-Council CodeRed",
         icon: Globe,
         color: "#8b5cf6",
+        status: "Verified",
         link: "#",
     },
     {
@@ -39,6 +42,7 @@ const certifications = [
         issuer: "EC-Council CodeRed",
         icon: Award,
         color: "#8b5cf6",
+        status: "Verified",
         link: "#",
     },
     {
@@ -46,6 +50,15 @@ const certifications = [
         issuer: "EC-Council CodeRed",
         icon: Zap,
         color: "#8b5cf6",
+        status: "Verified",
+        link: "#",
+    },
+    {
+        title: "ISO/IEC 27001 Information Security Associate",
+        issuer: "SkillFront",
+        icon: ShieldCheck,
+        color: "#3b82f6",
+        status: "Verified",
         link: "#",
     },
 ];

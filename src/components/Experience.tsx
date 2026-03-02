@@ -6,29 +6,33 @@ import { motion } from "framer-motion";
 const experiences = [
     {
         title: "AI Security Engineer Intern",
-        company: "Avaly.AI",
-        period: "Jun 2025 - Aug 2025",
+        company: "Avaly.ai",
+        period: "Jun 2025 to Aug 2025",
         description: [
-            "Designed secure LLM-based audit agent using Dockerized FastAPI.",
-            <>Reduced manual evidence processing by <span className="text-neon-green font-bold">60%</span> aligned with NIST AI RMF.</>,
-            <>Achieved <span className="text-neon-green font-bold">98% detection rate</span> for security anomalies in automated audit workflows.</>,
+            "Architected and prototyped an LLM-powered AI Audit Agent that operationalized 227 mapped controls across NIST AI RMF and ISO/IEC 42001, standardizing AI vendor self-assessments and reducing manual audit effort by ~20%.",
+            "Designed a comprehensive AI Security Vendor Self-Assessment framework spanning 7 trustworthiness domains, enabling structured evidence validation, control traceability, and maturity-based scoring across simulated GenAI deployment scenarios.",
+            "Conducted AI threat modeling and risk assessments for LLM-powered applications, mapping emerging threats (prompt injection, model inversion, data leakage, misuse) to NIST AI RMF mitigation strategies.",
+            "Contributed to AI-focused tabletop exercises and incident simulations to enhance organizational preparedness for model abuse and AI system failures.",
         ],
     },
     {
         title: "Cybersecurity Analyst",
         company: "KPMG India",
-        period: "Jul 2023 - Jul 2024",
+        period: "Jul 2023 to Jul 2024",
         description: [
-            <>Led CSMA assessments for 4 banking institutions; identified <span className="text-neon-green font-bold">80+ control gaps</span>.</>,
-            "Maintained security control checklists for AWS, Azure, and GCP.",
+            "Led cybersecurity maturity and compliance assessments across 7 RBI/SEBI-regulated financial institutions (4 large banks, 2 mid-size banks, 1 early-stage institution), evaluating 70+ controls per engagement. Identified 80+ control gaps at a large bank, supporting remediation that elevated maturity from 2.5 to 3.8.",
+            "Drafted 5 enterprise security policies and SOPs (Asset Management, Change Management, BCP/DR, Security Awareness, Tabletop Exercises); owned Asset Management workstream end-to-end improving control effectiveness by ~30%. Presented findings to CISOs and senior leadership across 7 to 10 stakeholder sessions per engagement.",
+            "Assessed IAM configurations, SIEM platforms (QRadar), GRC workflows (RSA Archer), and cloud security controls across AWS, Azure, and GCP to evaluate detection coverage and enterprise control maturity.",
         ],
     },
     {
         title: "Cybersecurity Intern",
         company: "KPMG India",
-        period: "Jan 2023 - Jul 2023",
+        period: "Jan 2023 to Jul 2023",
         description: [
-            "Validated SOC tool network architecture and supported policy development.",
+            "Supported regulatory cybersecurity audits by performing control walkthroughs, evidence validation, and compliance documentation reviews across financial sector clients.",
+            "Assisted in policy drafting and ISO 27001/NIST CSF alignment activities, contributing to improved audit preparedness and governance documentation quality.",
+            "Gained exposure to end-to-end engagement execution prior to transition into full workstream ownership as Analyst.",
         ],
     },
 ];

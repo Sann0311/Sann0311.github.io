@@ -73,7 +73,7 @@ const Hero = () => {
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-neon-green"></span>
                         </span>
                         <span className="text-[10px] md:text-xs uppercase mono-font tracking-[0.2em] text-foreground/60 group-hover:text-neon-green transition-colors">
-                            Actively Seeking Full-Time Opportunities
+                            Open to full-time roles starting May 2026, F1 OPT Eligible
                         </span>
                     </motion.div>
 
