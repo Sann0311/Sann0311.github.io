@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import React from "react";
 import { Geist, Geist_Mono, DM_Mono, Fraunces } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
