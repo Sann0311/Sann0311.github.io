@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 const links = [
     {
         label: "Resume",
-        sub: "saniyabhaladhare.me/resume.pdf",
-        href: "/resume.pdf",
+        sub: "saniyabhaladhare.me/SaniyaBhaladhare_Resume.pdf",
+        href: "/SaniyaBhaladhare_Resume.pdf",
         icon: "📄",
     },
     {

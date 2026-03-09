@@ -142,12 +142,12 @@ const Hero = () => {
                                     <div className="w-3 h-3 rounded-full bg-[#ffbd2e] opacity-50"></div>
                                     <div className="w-3 h-3 rounded-full bg-[#27c93f] opacity-50"></div>
                                     <span className="ml-4 text-xs mono-font text-foreground/40 uppercase tracking-widest hidden md:block">
-                                        resume.pdf
+                                        SaniyaBhaladhare_Resume.pdf
                                     </span>
                                 </div>
                                 <div className="flex items-center space-x-4">
                                     <a
-                                        href="/resume.pdf"
+                                        href="/SaniyaBhaladhare_Resume.pdf"
                                         download
                                         className="p-2 hover:bg-white/5 rounded-lg text-foreground/60 hover:text-neon-green transition-all group"
                                         title="Download PDF"
@@ -160,7 +160,7 @@ const Hero = () => {
                             {/* PDF Loader/Viewer */}
                             <div className="flex-1 bg-[#111] relative">
                                 <iframe
-                                    src="/resume.pdf#toolbar=0"
+                                    src="/SaniyaBhaladhare_Resume.pdf#toolbar=0"
                                     className="w-full h-full border-none"
                                     title="Saniya Bhaladhare Resume"
                                 ></iframe>

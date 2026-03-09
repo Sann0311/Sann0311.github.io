@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
   { name: "Certifications", href: "#certifications" },
+  { name: "Links", href: "/links" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -54,7 +55,7 @@ const Navbar = () => {
             ))}
             <div className="flex items-center space-x-4">
               <Link
-                href="/resume.pdf"
+                href="/SaniyaBhaladhare_Resume.pdf"
                 target="_blank"
                 className="px-4 py-2 border border-neon-green text-neon-green text-sm font-bold hover:bg-neon-green/10 transition-all rounded"
               >
@@ -103,7 +104,7 @@ const Navbar = () => {
               ))}
               <div className="flex flex-col space-y-4 pt-4">
                 <Link
-                  href="/resume.pdf"
+                  href="/SaniyaBhaladhare_Resume.pdf"
                   target="_blank"
                   className="w-full text-center px-4 py-3 border border-neon-green text-neon-green font-bold rounded"
                 >

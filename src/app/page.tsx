@@ -8,7 +8,6 @@ import Projects from "@/components/Projects";
 import Leadership from "@/components/Leadership";
 import Skills from "@/components/Skills";
 import Certifications from "@/components/Certifications";
-import Links from "@/components/Links";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -31,7 +30,6 @@ export default function Home() {
       <Leadership />
       <Skills />
       <Certifications />
-      <Links />
       <Contact />
     </main>
   );
