@@ -7,6 +7,15 @@ import { ExternalLink, Github, X, Info } from "lucide-react";
 const projects = [
     {
         id: 1,
+        title: "SecurePipe — DevSecOps CI/CD Security Pipeline",
+        tech: ["GitHub Actions", "Docker", "SAST/DAST", "Python", "DevSecOps"],
+        summary: "Architected a GitHub Actions CI/CD pipeline with intentionally vulnerable Python services, integrating Bandit (SAST), Semgrep, pip-audit (SCA), and OWASP ZAP (DAST) to automate end-to-end vulnerability detection on every commit.",
+        details: "Architected a GitHub Actions CI/CD pipeline with intentionally vulnerable Python services, integrating Bandit (SAST), Semgrep, pip-audit (SCA), and OWASP ZAP (DAST) to automate end-to-end vulnerability detection on every commit. Deployment gates block on critical findings, demonstrating secure-by-default engineering.",
+        github: "https://github.com/Sann0311/securepipe",
+        demo: "#",
+    },
+    {
+        id: 2,
         title: "InboxGuard - Phishing Email Analysis Tool",
         tech: ["Python", "AI Detection", "Scikit-Learn"],
         summary: "Built a Python-based phishing detection system to flag AI-generated spoofing patterns, malicious URL behavior, and brand impersonation.",
@@ -15,7 +24,7 @@ const projects = [
         demo: "#",
     },
     {
-        id: 2,
+        id: 3,
         title: "Keylogger Malware Simulation",
         tech: ["Python", "Cybersecurity", "Malware Analysis"],
         summary: "Simulated malware TTPs, anti-forensics, and persistence features to test system resilience.",

@@ -12,6 +12,7 @@ const navLinks = [
   { name: "Skills", href: "#skills" },
   { name: "Certifications", href: "#certifications" },
   { name: "Links", href: "/links" },
+  { name: "Medium", href: "https://medium.com/@saniyabhaladhare" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -48,6 +49,8 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="text-sm font-medium hover:text-neon-green transition-colors"
               >
                 {link.name}
@@ -97,6 +100,8 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="block text-lg font-medium hover:text-neon-green transition-colors"
                 >
                   {link.name}

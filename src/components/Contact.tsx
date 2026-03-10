@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Linkedin, Github, ExternalLink, Calendar } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github, ExternalLink, Calendar, BookOpen } from "lucide-react";
 
 const Contact = () => {
     const contactInfo = [
@@ -29,6 +29,12 @@ const Contact = () => {
             label: "GitHub",
             value: "github.com/Sann0311",
             href: "https://github.com/Sann0311",
+        },
+        {
+            icon: BookOpen,
+            label: "Medium",
+            value: "medium.com/@saniyabhaladhare",
+            href: "https://medium.com/@saniyabhaladhare",
         },
     ];
 

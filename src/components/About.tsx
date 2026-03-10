@@ -30,16 +30,16 @@ const About = () => {
                         className="space-y-6"
                     >
                         <p className="text-lg text-foreground/80 leading-relaxed italic border-l-4 border-neon-green pl-6 py-2 bg-neon-green/5">
-                            "My journey into cybersecurity started in the structured world of Governance, Risk, and Compliance. At KPMG India, I spent 1.7 years working across 7 RBI/SEBI-regulated financial institutions, running maturity assessments, closing control gaps, and drafting enterprise security policies aligned with ISO 27001 and NIST CSF. That work gave me a deep appreciation for how compliance frameworks translate into real organizational resilience."
+                            "My journey into cybersecurity started in the structured world of Governance, Risk, and Compliance. At KPMG India, I spent over a year working across 7 RBI/SEBI-regulated financial institutions — running maturity assessments, closing control gaps, drafting enterprise security policies, and sitting across the table from CISOs to walk through remediation roadmaps. That work gave me a deep understanding of how adversaries think, how organizations fail, and how controls either hold or collapse under pressure."
                         </p>
                         <p className="text-lg text-foreground/80 leading-relaxed">
-                            But something shifted when I started encountering AI systems in enterprise environments. Traditional security policies were not built for models that hallucinate, drift, or get manipulated through prompt injection. That gap became an obsession.
+                            But something shifted when AI systems started showing up in enterprise environments. Traditional security policies were not built for models that hallucinate, drift, or get manipulated through prompt injection. That gap became an obsession — and it pushed me toward the technical side of security in a way compliance work alone never could.
                         </p>
                         <p className="text-lg text-foreground/80 leading-relaxed text-left">
-                            It led me to Avaly.ai, where as an AI Security Engineer Intern I built LLM-powered audit agents, designed vendor self-assessment frameworks across 7 trustworthiness domains, and mapped 227 controls across NIST AI RMF and ISO/IEC 42001. I was not just studying AI risk, I was building the tooling to operationalize it.
+                            At Avaly.ai, I built LLM-powered audit agents, designed vendor self-assessment frameworks across 7 trustworthiness domains, and mapped 227 controls across NIST AI RMF and ISO/IEC 42001. Alongside that, I've built security tooling from scratch — a phishing detection system that flags AI-generated spoofing patterns, and a DevSecOps pipeline that automates SAST, SCA, and DAST scanning on every commit to catch vulnerabilities before they ship.
                         </p>
                         <p className="text-lg text-foreground/80 leading-relaxed font-medium">
-                            That experience convinced me this problem deserved deeper academic rigor. I am now dedicating my Master's thesis at UW Bothell to developing an <span className="text-neon-green">"AI Security Compliance and Risk Assessment Framework for Large Language Model Systems"</span>, formalizing what I saw in practice into a framework others can use. I am actively building at the intersection of GRC and AI security, and I am looking for a team doing the same.
+                            I care about how attacks actually work, how detection breaks down, and how security can be engineered into systems rather than bolted on afterward. I'm now formalizing that thinking into my Master's thesis at UW Bothell, building an AI Security Compliance Framework for LLM deployments. I'm looking for a team that operates at this intersection — where frameworks meet real threats, and where engineering and risk speak the same language."
                         </p>
                     </motion.div>
 
@@ -61,7 +61,7 @@ const About = () => {
                             <ShieldCheck className="text-cyber-purple mb-4" size={32} />
                             <h3 className="text-xl font-bold mb-2 mono-font">Industry Exp</h3>
                             <p className="text-sm text-foreground/60 leading-relaxed">
-                                1.7+ years at KPMG and Avaly.AI in AI Security & GRC.
+                                2+ years at KPMG and Avaly.AI in AI Security & GRC.
                             </p>
                         </div>
                         <div className="cyber-card p-6 rounded-lg text-left col-span-1 sm:col-span-2">
